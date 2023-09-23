@@ -204,11 +204,6 @@ img {
 }
 
 
-.current {
-    position: relative;
-    color: var(--header-a-active-cl);
-}
-
 .header-menu-link.current::after {
 content: '';
 position: absolute;
@@ -220,7 +215,6 @@ height: 4px;
 border-radius: 2px;
 background-color: var(--header-a-active-cl);
 }
-
 
 .header-menu-link {
 font-weight: 500;
@@ -239,7 +233,10 @@ position: relative;
 .hdr-text-color {
     color: #2e2f42;
 }
-
+.current {
+    position: relative;
+    color: var(--header-a-active-cl);
+}
 
 /*
 |==========================================|
@@ -726,5 +723,16 @@ address {
     padding-top: 72px;
     border-radius: 4px;
     background-color: #FCFCFC;
-
 }
+.btn-close-window {
+    /*
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    */
+}
+
+.close-icon {
+    stroke: var(--color-studio-header);
+}
+
