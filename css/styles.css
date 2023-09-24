@@ -862,7 +862,27 @@ address {
 
 .review-form-checkdox-label {}
 
-.review-form-checkbox-span {}
+.review-form-checkbox-span {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+    fill: transparent;
+}
+/*|========роблю кастомний CHECKBOX========|*/
+.review-form-checkbox:checked
+ ~.review-form-checkdox-label
+ > .review-form-checkbox-span {
+   background-color: var(--header-a-active-cl);
+   stroke: var(--color-studio-footer);
+}
+/*|========імітація роботи про FOCUS/CHECKBOX========|*/
+.review-form-checkbox:focus
+~.review-form-checkdox-label
+>.review-form-checkbox-span {
+    border: 1px solid rgba(46, 47, 66, 0.40);
+}
 
 .review-form-checkbox-link {}
 
