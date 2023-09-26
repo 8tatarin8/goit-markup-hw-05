@@ -856,11 +856,22 @@ address {
 
 
 /*|========CHECKBOX========|*/
-.review-form-checkbox-box {}
+.review-form-checkbox-box {
+    margin-bottom: 24px;
+}
 
 .review-form-checkbox {}
 
-.review-form-checkdox-label {}
+.review-form-checkdox-label {
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.17;
+        /* 116.667% */
+    letter-spacing: 0.04em;
+    color: #8E8F99;
+}
 
 .review-form-checkbox-span {
     display: inline-flex;
@@ -869,6 +880,7 @@ address {
     width: 16px;
     height: 16px;
     fill: transparent;
+    margin-right: 8px;
 }
 /*|========роблю кастомний CHECKBOX========|*/
 .review-form-checkbox:checked
@@ -884,7 +896,9 @@ address {
     border: 1px solid rgba(46, 47, 66, 0.40);
 }
 
-.review-form-checkbox-link {}
+.review-form-checkbox-link {
+    color: var(--color-web);
+}
 
 /*|========BUTTON========|*/
 .review-form-submit {
