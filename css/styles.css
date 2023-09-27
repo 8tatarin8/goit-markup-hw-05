@@ -735,31 +735,43 @@ address {
     padding-top: 72px;
     border-radius: 4px;
     background-color: #FCFCFC;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 
+    0px 1px 3px rgba(0, 0, 0, 0.12), 
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 /*|========CLOSE BUTTON========|*/
 .btn-close-window {
-    /*
-    line-height: 0;
-    background-color: transparent;
-    border: none;
-    padding: 0;
-    */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     top: 24px;
     right: 24px;
     fill: #E7E9FC;
-    border-radius: 4px;
+    border-radius: 50%;
     background-color: #E7E9FC;
     border: none;
+    width: 24px;
+    height: 24px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 .btn-close-window:hover,
 .btn-close-window:focus {
     fill: var(--header-a-active-cl);
+    background-color: #404bbf;
 }
 
 .close-icon {
-    fill: var(--color-studio-header);
+    fill: #ffffff;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -778,7 +790,7 @@ address {
 .review-form {}
 
 .review-form-box {
-    margin-bottom: 16px;
+    margin-bottom: 8px;
 }
 
 .review-form-label {
@@ -790,6 +802,7 @@ address {
     letter-spacing: 0.04em;
     color: #8E8F99;
     margin-bottom: 4px;
+    line-height: 1.17;
 }
 
 .review-form-positioning-box{
@@ -803,6 +816,9 @@ address {
     border: 1px solid rgba(46, 47, 66, 0.40);
     padding-left: 32px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: transparent;
+    padding-left: 38px;
+    outline: transparent;
 }
 /*|========FOCUS/зміна кольору INPUT========|*/
 .review-form-input:focus {
@@ -836,7 +852,7 @@ address {
     line-height: 1.17;
         /* 116.667% */
     letter-spacing: 0.04em;
-    color: var(--color-studio-header);
+    color: rgba(46, 47, 66, 0.4);
     width: 100%;
     height: 120px;
     border-radius: 4px;
@@ -847,6 +863,8 @@ address {
     padding-right: 16px; 
     resize: none;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: transparent;
+    outline: transparent;
 }
 /*|========PLACEHOLDER/зміна кольору========|*/
 .review-form-comment::placeholder {
@@ -886,6 +904,11 @@ address {
     height: 16px;
     fill: transparent;
     margin-right: 8px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*|========роблю кастомний CHECKBOX========|*/
 .review-form-checkbox:checked
@@ -893,6 +916,8 @@ address {
  > .review-form-checkbox-span {
    background-color: var(--header-a-active-cl);
    stroke: var(--color-studio-footer);
+   border: none
+   fill:var(--color-studio-footer);
 }
 /*|========імітація роботи про FOCUS/CHECKBOX========|*/
 .review-form-checkbox:focus
@@ -907,7 +932,7 @@ address {
 
 /*|========BUTTON========|*/
 .review-form-submit {
-    display: inline-flex;
+    display: block;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
@@ -925,7 +950,7 @@ address {
     min-width: 169px;
     height: 56px;
     border: none;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
