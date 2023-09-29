@@ -767,7 +767,7 @@ address {
 }
 .btn-close-window:hover,
 .btn-close-window:focus {
-    fill: var(--header-a-active-cl);
+    fill: #ffffff;
     background-color: #404bbf;
     border: none;
 }
@@ -923,8 +923,8 @@ address {
  > .review-form-checkbox-span {
    background-color: var(--header-a-active-cl);
    stroke: var(--color-studio-footer);
-   border: none
-   fill var(--color-studio-footer);
+   border: none;
+   fill: var(--color-studio-footer);
 }
 /*|========імітація роботи про FOCUS/CHECKBOX========|*/
 .review-form-checkbox:focus
