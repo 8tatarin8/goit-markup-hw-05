@@ -773,7 +773,7 @@ address {
 }
 
 .close-icon {
-    fill: #ffffff;
+    fill: var(--color-studio-header);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -792,7 +792,7 @@ address {
 .review-form {}
 
 .review-form-box {
-    margin-bottom: 16px;
+    margin-bottom: 8px;
 }
 
 .review-form-label {
@@ -847,6 +847,11 @@ address {
 }
 
 /*|========TEXTAREA========|*/
+/*клас для margin/texteria*/
+.review-form-box-comment-texteria {
+    margin-bottom: 16px;
+}
+
 .review-form-comment {
     display: block;
     font-size: 12px;
@@ -952,7 +957,10 @@ address {
     min-width: 169px;
     height: 56px;
     border: none;
+    margin-right: auto;
+    margin-left: auto;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 
