@@ -696,7 +696,9 @@ address {
 }
 
 /* ========SYBSCRIBE======= */
-.sybscribe-footer-box {}
+.sybscribe-footer-box {
+    margin-left: 80px;
+}
 
 .text-sybscribe {
     font-size: 16px;
