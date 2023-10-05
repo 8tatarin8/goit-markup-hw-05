@@ -730,6 +730,11 @@ address {
     color: #ffffff;
 
 }
+/* ==========HOVER========== */
+.sybscribe-footer-input:hover,
+.sybscribe-footer-input:focus {
+    outline: transparent;
+}
 /*|========PLACEHOLDER/зміна кольору========|*/
 .sybscribe-footer-input::placeholder {
     color: #ffffff;
