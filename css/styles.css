@@ -839,9 +839,13 @@ address {
 }
 .btn-close-window:hover,
 .btn-close-window:focus {
-    fill: #ffffff;
+    
     background-color: #404bbf;
     border: none;
+}
+.btn-close-window:hover .close-icon,
+.btn-close-window:focus .close-icon {
+    fill: #ffffff;
 }
 
 .close-icon {
@@ -990,6 +994,13 @@ address {
     border 250ms cubic-bezier(0.4, 0, 0.2, 1), 
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+/*|========імітація роботи про FOCUS/CHECKBOX========|*/
+.review-form-checkbox:focus
+~.review-form-checkdox-label
+>.review-form-checkbox-span {
+    border: 1px solid rgba(46, 47, 66, 0.40);
+}
 /*|========роблю кастомний CHECKBOX========|*/
 .review-form-checkbox:checked
  ~.review-form-checkdox-label
@@ -998,12 +1009,6 @@ address {
    stroke: var(--color-studio-footer);
    border: none;
    fill: var(--color-studio-footer);
-}
-/*|========імітація роботи про FOCUS/CHECKBOX========|*/
-.review-form-checkbox:focus
-~.review-form-checkdox-label
->.review-form-checkbox-span {
-    border: 1px solid rgba(46, 47, 66, 0.40);
 }
 
 .review-form-checkbox-link {
